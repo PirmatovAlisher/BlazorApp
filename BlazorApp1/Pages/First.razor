@@ -1,0 +1,85 @@
+﻿@page "/first"
+
+<PageTitle>First page</PageTitle>
+
+<h1>Our Services</h1>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+
+<div class="container">
+	<div class="row">
+		 <div class="col-sm">
+			<div class="row align-items-center">
+				<div class="col-md-auto">
+				<span class="oi oi-folder" aria-hidden="true"></span>
+				</div>
+				<div class="col-sm">
+					<h4>AIR TRANSPORT</h4>
+					<p>@someText</p>
+					<a href="/todo">Read more</a>
+				</div>
+		    </div>
+		</div>
+		
+		<div class="col-sm">
+			<div class="row align-items-center">
+				<div class="col-md-auto">
+					<span class="oi oi-basket" aria-hidden="true"></span>
+				</div>
+				<div class="col-sm">
+					<h4>CARGO TRANSPORT</h4>
+					<p>@someText</p>
+					<a href="/todo">Read more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm">
+			<div class="row align-items-center">
+				<div class="col-md-auto">
+					<span class="oi oi-script" aria-hidden="true"></span>
+				</div>
+				<div class="col-sm">
+					<h4>TRUCKS TRANSPORT</h4>
+					<p>@someText</p>
+					<a href="/todo">Read more</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm">
+			<div class="row align-items-center">
+				<div class="col-md-auto">
+					<span class="oi oi-credit-card" aria-hidden="true"></span>
+				</div>
+				<div class="col-sm">
+					<h4>TRAIN TRANSPORT</h4>
+					<p>@someText</p>
+					<a href="/todo">Read more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Next Block-->
+<div class="container">
+	<div class="row">
+		<div class="col align-self-center">
+			 <h3>About Us</h3>
+			 <p>@description</p>
+			 <a href="/todo" class="aboutUs">Read more</a>
+		  </div>
+		
+		<div class="col-sm">
+			<img src="/images/about-img.jpg" class="rounded mx-auto d-block" alt="Image" width="450" height="350" >
+		</div>
+	</div>
+</div>
+
+
+@code {
+	private string someText = "fact that a reader will be distracted by the readable content of a page when looking at its layout.Thepoint of using";
+	private string description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationin some form, by injected humour, or randomised words which don't look even slightly believable. If youare going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.";
+
+}

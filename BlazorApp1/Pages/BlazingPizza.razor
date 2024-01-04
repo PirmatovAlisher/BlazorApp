@@ -1,0 +1,38 @@
+﻿@page "/pizza"
+
+<div class="main">
+	<h3>BlazingPizza</h3>
+</div>
+
+@code {
+
+	public class PizzaSpecial
+	{
+		public int Id { get; set; }
+
+		public string? Name { get; set; }
+
+		public decimal BasePrice { get; set; }
+
+		public string? Description { get; set; }
+
+		public string? ImageUrl { get; set; }
+
+		public string GetFormattedBasePrice() => BasePrice.ToString("0.00");
+
+		public List<PizzaSpecial> specials = new();
+
+		protected void OnInitialized()
+		{
+			specials.AddRange(new List<PizzaSpecial>
+			{
+				new PizzaSpecial {Name = "The Baconatorizor" , BasePrice = 11.99M , Description = "It has EVERY kind of bacon" , ImageUrl = "" },
+				new PizzaSpecial {Name = "Buffalo chicken" , BasePrice = 12.75M , Description = "Spicy chicken, hot sauce, and blue cheese, guaranteed to warm you up" , ImageUrl = "" },
+				new PizzaSpecial {Name = "Veggie Delight" , BasePrice = 11.5M , Description = "It's like salad, but on a pizza" , ImageUrl = "" },
+				new PizzaSpecial {Name = "Margherita" , BasePrice = 9.99M , Description = "Traditional Italian pizza with tomatoes and basil" , ImageUrl = "" },
+				new PizzaSpecial {Name = "Basic Cheese Pizza" , BasePrice = 11.99M , Description = "It's cheesy and delicious. Why wouldn't you want one?" , ImageUrl = "" },
+				new PizzaSpecial {Name = "Classic pepperoni" , BasePrice = 10.5M, Description = "It's the pizza you grew up with, but Blazing hot!" , ImageUrl = "" }
+			});
+		}
+	}
+}
