@@ -2,30 +2,32 @@
 
 <PageTitle>First page</PageTitle>
 
-<h1>Our Services</h1>
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+<h1>Our <p style="color:aqua">Services</p></h1>
+<p >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
 
+
+
+<!--Final Grid-->
 <div class="container">
-	<div class="row">
-		 <div class="col-sm">
-			<div class="row align-items-center">
-				<div class="col-md-auto">
-				<span class="oi oi-folder" aria-hidden="true"></span>
+	<div class="row g-2" >
+		<div class="col-sm g-5" >
+			<div class="row" style="background-color:aliceblue; padding:	20px 20px; border-radius:7px;">
+				<div class="col-auto col align-self-center">
+					<span class="oi oi-basket" aria-hidden="true" style="font-size:40px; color:lightblue"></span>
 				</div>
-				<div class="col-sm">
+				<div class="col" style="padding: 5px;">
 					<h4>AIR TRANSPORT</h4>
 					<p>@someText</p>
 					<a href="/todo">Read more</a>
 				</div>
-		    </div>
+			</div>
 		</div>
-		
-		<div class="col-sm">
-			<div class="row align-items-center">
-				<div class="col-md-auto">
-					<span class="oi oi-basket" aria-hidden="true"></span>
+		<div class="col-sm g-5" >
+			<div class="row" style="background-color:aliceblue; padding: 20px 20px; border-radius:7px;">
+				<div class="col-auto col align-self-center">
+					<span class="oi oi-ban" aria-hidden="true" style="font-size:40px; color:lightblue"></span>
 				</div>
-				<div class="col-sm">
+				<div class="col" style="padding: 5px;">
 					<h4>CARGO TRANSPORT</h4>
 					<p>@someText</p>
 					<a href="/todo">Read more</a>
@@ -34,25 +36,25 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-sm">
-			<div class="row align-items-center">
-				<div class="col-md-auto">
-					<span class="oi oi-script" aria-hidden="true"></span>
+	<div class="row g-2">
+		<div class="col-sm g-5">
+			<div class="row" style="background-color:aliceblue; padding:	20px 20px; border-radius:7px;">
+				<div class="col-auto col align-self-center">
+					<span class="oi oi-action-redo" aria-hidden="true" style="font-size:40px; color:lightblue"></span>
 				</div>
-				<div class="col-sm">
-					<h4>TRUCKS TRANSPORT</h4>
+				<div class="col" style="padding: 5px;">
+					<h4>TRUCK TRANSPORT</h4>
 					<p>@someText</p>
 					<a href="/todo">Read more</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm">
-			<div class="row align-items-center">
-				<div class="col-md-auto">
-					<span class="oi oi-credit-card" aria-hidden="true"></span>
+		<div class="col-sm g-5">
+			<div class="row" style="background-color:aliceblue; padding: 20px 20px; border-radius:7px;">
+				<div class="col-auto col align-self-center">
+					<span class="oi oi-arrow-circle-bottom" aria-hidden="true" style="font-size:40px; color:lightblue"></span>
 				</div>
-				<div class="col-sm">
+				<div class="col" style="padding: 5px;">
 					<h4>TRAIN TRANSPORT</h4>
 					<p>@someText</p>
 					<a href="/todo">Read more</a>
@@ -63,19 +65,22 @@
 </div>
 
 <!--Next Block-->
-<div class="container">
-	<div class="row">
-		<div class="col align-self-center">
-			 <h3>About Us</h3>
-			 <p>@description</p>
-			 <a href="/todo" class="aboutUs">Read more</a>
-		  </div>
-		
-		<div class="col-sm">
-			<img src="/images/about-img.jpg" class="rounded mx-auto d-block" alt="Image" width="450" height="350" >
+<section>
+	<div class="container g-5">
+		<div class="row">
+			<div class="col align-self-center g-3">
+				<h3>About Us</h3>
+				<p>@description</p>
+				<a href="/todo" class="aboutUs">Read more</a>
+			</div>
+
+			<div class="col-sm g-3">
+				<img src="/images/about-img.jpg" class="img-fluid" alt="Image" >
+			</div>
 		</div>
 	</div>
-</div>
+</section>
+
 
 
 @code {

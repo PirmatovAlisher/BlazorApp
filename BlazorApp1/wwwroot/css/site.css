@@ -63,30 +63,9 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
-.col-sm {
-    background-color:aliceblue;
-    padding: 5px;
-    margin: 20px;
-}
 
 h3,h4{
     font-weight: 550;
-}
-
-.col-sm a{
-    color: black;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 7px;
-}
-
-.col-sm a:hover{
-    color:aqua;
-    background-color:floralwhite;
-}
-
-.oi oi-folder {
-    padding: 20px;
 }
 
 .aboutUs {
@@ -106,4 +85,15 @@ h3,h4{
     padding: 5px;
     width : 85px;
     height: 85px;
+}
+
+.col a{
+    text-decoration: none;
+    padding:7px;
+}
+
+.col a:hover {
+    background-color:lightskyblue;
+    color:white;
+    border-radius: 5px;
 }
