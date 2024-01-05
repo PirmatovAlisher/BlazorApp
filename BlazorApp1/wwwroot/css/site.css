@@ -68,14 +68,13 @@ h3,h4{
     font-weight: 550;
 }
 
-.aboutUs {
+.aboutUs a{
     color: white;
-    padding: 10px 25px;
     text-decoration: none;
     background-color: lightskyblue;
 }
 
-.aboutUs:hover {
+.aboutUs a:hover {
     color: white;
     background-color: darkcyan;
 }
